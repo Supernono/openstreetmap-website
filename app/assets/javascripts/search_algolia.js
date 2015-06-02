@@ -6,7 +6,7 @@
 
    $('#user-search').typeahead({hint: false}, {
       source: index.ttAdapter({hitsPerPage: 5}),
-      displayKey: 'cityName', <!-- display the name of the city -->
+      displayKey: 'cityName', // display the name of the city
       templates: {
         suggestion: function(hit) {
           // render the hit
