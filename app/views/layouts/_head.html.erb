@@ -46,5 +46,11 @@
     OSM.oauth_consumer_secret = "<%= @oauth.client_application.secret %>";
     <% end -%>
   </script>
+    	<!-- Algolia JS files -->
+	<script src="//cdn.jsdelivr.net/typeahead.js/0.10.5/typeahead.jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="/assets/search_algolia.js"></script>
+	<!-- End Algolia JS files -->
+	
   <title><%= t 'layouts.project_name.title' %><%= ' | ' + @title if @title %></title>
 </head>
